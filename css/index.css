@@ -1,0 +1,28 @@
+.menu {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .menu__logo {
+    height: 70px; }
+  .menu__boton {
+    color: white;
+    background-color: transparent;
+    border-color: transparent !important; }
+    .menu__boton__icono {
+      background-image: url(https://drive.google.com/file/d/1IvckssxxG3XMG5JP6JIPhcuioXUqvAvT/view?usp=sharing);
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%; }
+  .menu__producto {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0; }
+    .menu__producto__items {
+      padding: 0 0 0 3rem; }
+      .menu__producto__items a {
+        color: white;
+        text-decoration: none; }
