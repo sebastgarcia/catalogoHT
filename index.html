@@ -9,64 +9,85 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css" >
 
+    <!--TIPOGRAFIA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     
     
 
     <title>Catalogo Mayorista - H&T</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg menu">
-        <div class="container-xl">
-            <a><img class="menu__logo" src="imagenes/logoMayorista-03.svg" alt="Home & Treat - Catalogo Mayorista"></a>
-            
-            <button class="navbar-toggler menu__boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="menu__boton__icono"></span>
-            </button>
-
-
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
+    <header>
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="container-xl px-4 m-0" style="max-width: 1140px;">
+                
+                <a><img class="menu__logo" src="imagenes/logoMayorista-03.svg" alt="Home & Treat - Catalogo Mayorista">
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      
-
-<!--
-    <nav class="menu">
-        <section class="container-xl menu__container py-3 px-0" >
-            <a><img class="menu__logo" src="imagenes/logoMayorista-03.svg" alt="Home & Treat - Catalogo Mayorista"></a>
             
-            
-          
-            <ul class="menu__producto">
-                <li class="menu__producto__items"> <a href="">Malibú</a></li>
-                <li class="menu__producto__items"> <a href="">Weekend</a></li>
-                <li class="menu__producto__items"> <a href="">Almohadones</a></li>
-            </ul>
+                <button class="navbar-toggler menu__boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="menu__boton__icono"></span>
+                </button>
 
-        </section>
-    </nav>
-    -->
+
+                <div class="collapse navbar-collapse"  id="navbarNavDropdown">
+                    <ul class="navbar-nav menu__producto">
+                        
+                        <li class="nav-item dropdown menu__producto__categoria">
+                            <a class="dropdown-toggle menu__producto__categoria__item" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Bolsos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Weekend</a></li>
+                                <li><a class="dropdown-item" href="#">Malibu</a></li>
+                              
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown menu__producto__categoria">
+                            <a class="dropdown-toggle menu__producto__categoria__item" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Almohadones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                
+                                <li><a class="dropdown-item" href="#">Lino - borde Chick</a></li>
+                                <li><a class="dropdown-item" href="#">Lino - borde Classic</a></li>
+                                <li><a class="dropdown-item" href="#">Lino - borde Flecos</a></li>
+                                <li><a class="dropdown-item" href="#">Lino - Rectangular</a></li>
+                                <li><a class="dropdown-item" href="#">Square</a></li>
+                              
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown menu__producto__categoria">
+                            <a class="dropdown-toggle menu__producto__categoria__item" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Vasos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                
+                                <li><a class="dropdown-item" href="#">Danes</a></li>
+                                <li><a class="dropdown-item" href="#">Dancer</a></li>
+                                <li><a class="dropdown-item" href="#">Dancer Tallado</a></li>
+                                <li><a class="dropdown-item" href="#">Whisky Classic</a></li>
+                                <li><a class="dropdown-item" href="#">Modena</a></li>
+                                <li><a class="dropdown-item" href="#">Tumbler</a></li>
+                                <li><a class="dropdown-item" href="#">Long Drink Classic</a></li>
+                              
+                              
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+   PONER ACA TODOS LOS PRODUCTOS. GALERIA
+
 
     
     

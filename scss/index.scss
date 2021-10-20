@@ -1,20 +1,29 @@
+html {
+    font-size: 62.5%; }
+
+body{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+
+}
+
 
 .menu{
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.80);
-
+    
+    background-color: rgb(0, 0, 0);    
    
     &__logo{
         height: 70px;
     }
 
     &__boton {
-        color: white;
         background-color: transparent;
         border-color: transparent !important;
 
         &__icono{
-            background-image: url(https://raw.githubusercontent.com/sebastgarcia/catalogoHT/309588a3a2f14eae7c764330dadf9e6212698a32/imagenes/boton_navbar.svg); 
+            background-image: url(https://raw.githubusercontent.com/sebastgarcia/catalogoHT/0deb3b94da9c05948aef04c07d62985daf7f413d/imagenes/boton_navbar.svg); 
 
             display: inline-block;
             width: 1.5em;
@@ -25,22 +34,65 @@
             background-size: 100%;
         }
     }
-
+ 
     &__producto{
         list-style: none;
-        display: flex;
-        align-items: center;
         margin: 0;
+        padding-left: 3rem;
 
-        &__items{
-            padding: 0 0 0 3rem;
+        &__categoria{
+            padding: 2rem 0 0 3rem;
+
+            &__item{
+                padding: 0.5rem 1rem;
+            }
 
             a{
                 color: white;
                 text-decoration: none;
+
+                &:hover{
+                    background-color: salmon;
+                   
+                    color: white;
+                
+                }
             }
+
+        
         }
 
     }
 }
+
+.dropdown-menu {
+    background-color: #000;
+    left: auto !important;
+    border-color: transparent;
+    
+}
+
+.dropdown-item{
+    font-weight: 300;
+    font-size: 1.8rem;
+
+
+}
+
+
+
+.presentacion{
+    
+
+    &__imagen{
+        
+
+    }
+
+    &__detalle{
+
+    }
+}
+
+
 
