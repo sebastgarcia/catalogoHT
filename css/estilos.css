@@ -1,0 +1,138 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.15rem; }
+
+.menu {
+  background-color: black; }
+  .menu__logo {
+    height: 70px; }
+  .menu__boton {
+    background-color: transparent;
+    border-color: transparent !important; }
+    .menu__boton__icono {
+      background-image: url(https://raw.githubusercontent.com/sebastgarcia/catalogoHT/0deb3b94da9c05948aef04c07d62985daf7f413d/imagenes/boton_navbar.svg);
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%; }
+  .menu__producto {
+    list-style: none;
+    margin: 0;
+    padding-left: 3rem; }
+    .menu__producto__categoria {
+      padding: 2rem 0 0 3rem; }
+      .menu__producto__categoria__item {
+        padding: 0.5rem 1rem; }
+      .menu__producto__categoria a {
+        color: white;
+        text-decoration: none; }
+        .menu__producto__categoria a:hover {
+          background-color: salmon;
+          color: white; }
+
+.dropdown-menu {
+  background-color: #000;
+  left: auto !important;
+  border-color: transparent; }
+
+.dropdown-item {
+  font-weight: 300;
+  font-size: 1.8rem; }
+
+.presentacion {
+  margin-top: 3rem;
+  display: flex; }
+  .presentacion__imagen {
+    display: flex;
+    justify-content: center; }
+    .presentacion__imagen img {
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: 2rem;
+      box-shadow: 5px 5px 10px #888888;
+      background-size: cover;
+      background-position: center center; }
+  .presentacion__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5rem; }
+    .presentacion__texto__detalle {
+      list-style: none;
+      padding: 0; }
+      .presentacion__texto__detalle__colores {
+        list-style: none;
+        display: inline-flex;
+        padding: 0;
+        align-items: center; }
+        .presentacion__texto__detalle__colores li {
+          padding: 0 1rem 0 0;
+          display: inline-flex;
+          align-items: center;
+          justify-content: space-around;
+          font-size: 1.75rem; }
+    .presentacion__texto__condiciones {
+      list-style: none;
+      padding: 0; }
+
+.nombreProducto {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Amethysta', serif;
+  top: 95px;
+  padding: 0;
+  max-width: 80vw; }
+  .nombreProducto .titulo {
+    font-size: 2.5rem;
+    padding: 2rem;
+    background-color: #d41b0ed5;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 8px #888888; }
+  .nombreProducto .precio {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: #d41b0ed5;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 8px #888888; }
+
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  margin: 8rem 0; }
+  .galeria__producto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 2rem; }
+    .galeria__producto img {
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 2rem;
+      box-shadow: 5px 5px 10px #888888;
+      background-size: cover;
+      background-position: center center; }
+
+.color {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  display: inline-flex;
+  margin-right: 0.5rem; }
+  .color__maiz {
+    background: #df9b36; }
+  .color__cemento {
+    background: #4c5057; }
+  .color__natural {
+    background: #f5e1c3; }
