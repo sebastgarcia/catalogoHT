@@ -146,13 +146,19 @@ footer {
   background-color: #000; }
   footer .menuFooter {
     padding: 3rem 0;
-    margin: auto; }
+    margin: auto;
+    display: flex;
+    justify-content: center; }
     footer .menuFooter__logo {
       height: 70px;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      margin: auto;
+      padding: 0; }
       footer .menuFooter__logo img {
-        height: 100%; }
+        height: 100%;
+        align-self: center;
+        margin: auto; }
     footer .menuFooter__contacto {
       padding-top: 1rem;
       display: flex;
