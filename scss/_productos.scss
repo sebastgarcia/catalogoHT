@@ -1,6 +1,6 @@
 .presentacion{
 
-    margin-top: 3rem;
+    margin: 3rem 0;
     display: flex;
     
     
@@ -9,6 +9,9 @@
         
         display: flex;
         justify-content: center;
+        position: relative;
+        top: 60px;
+        margin-bottom: 6rem;
         
 
         img {
@@ -27,7 +30,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin-top: 5rem;
+        position: relative;
+        top: 60px;
 
         &__detalle{
             list-style: none;
@@ -53,6 +57,7 @@
         &__condiciones{
             list-style: none;
             padding: 0;
+            margin-bottom: 4rem + 5rem;
             
         }
 
@@ -66,14 +71,13 @@
     display: flex;
     flex-direction: column;
     font-family: 'Amethysta', serif;
-    top: 95px;
     padding: 0;
     max-width: 80vw;
 
     .titulo{
         font-size: 2.5rem;
         padding: 2rem;
-        background-color: #d41b0ed5;
+        background-color: $bgTitulo;
         border-radius: 2rem;
         box-shadow: 2px 2px 8px #888888;
     }
@@ -82,7 +86,7 @@
 
         font-size: 2rem;
         padding: 1rem 2rem;
-        background-color: #d41b0ed5;
+        background-color: $bgTitulo;
         border-radius: 2rem;
         box-shadow: 2px 2px 8px #888888;
 
@@ -94,7 +98,8 @@
 .galeria {
     display: flex;
     justify-content: space-around;
-    margin: 6rem 0 4rem 0;
+    margin: 4rem 0;
+    
 
     &__producto{
         position: relative;
@@ -113,8 +118,6 @@
             background-size: cover;
             background-position: center center;
         }
-    
-
     }
 }
 
@@ -126,16 +129,30 @@
     margin-right: 0.5rem;
     
     &__maiz{
-    background: #df9b36;
+        background: $maiz;
     }
 
     &__cemento{
-        background: #4c5057;
+        background: $cemento;
     }
 
     &__natural{
-        background: #f5e1c3;
+        background: $natural;
     }
 
+}
+
+@media only screen and (max-width: 992px) {
+
+    .presentacion{
+    
+        &__imagen{
+
+            justify-content: start;
+            margin-bottom: 2rem;
+          
+
+        }
+    }
 
 }

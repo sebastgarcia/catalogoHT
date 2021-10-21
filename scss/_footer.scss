@@ -1,6 +1,10 @@
-.footer{
+footer{
     background-color: #000;
+
+
+.menuFooter{
     padding: 3rem 0;
+    margin: auto;
 
     &__logo{
         height: 70px;
@@ -26,7 +30,7 @@
             text-decoration: none;
             padding: 1rem;
 
-            &:hover{
+            &:hover{ 
                 background-color: salmon;
                 color: white;
             
@@ -34,4 +38,5 @@
         }
 
     }
+}
 }

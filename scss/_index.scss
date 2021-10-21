@@ -1,0 +1,111 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.tituloSitio{
+    font-family: 'Amethysta', serif;
+    font-size: 6rem;
+    align-self: center;
+    line-height: 4rem;
+
+}
+
+.bajada{
+    font-size: 3rem;
+    align-self: center;
+
+}
+
+.info {
+    
+    padding: 0 10%;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+
+.tituloCategoria{
+    font-family: 'Amethysta', serif;
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+
+.galeriaIndex {
+    display: flex;
+    justify-content: flex-start;
+    
+    
+
+    &__producto{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        padding: 2rem ;
+    
+
+        img {
+            position: relative;
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 2rem;
+            box-shadow: 5px 5px 10px #888888;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    
+    .info {
+
+        font-size: 1.75rem;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        margin: 2rem 0 0 0;
+        padding: 0 2rem;
+    }
+
+    .tituloSitio{
+        font-family: 'Amethysta', serif;
+        font-size: 4rem;
+        align-self: flex-start;
+        line-height: 3rem;
+    
+    }
+    
+    .bajada{
+        font-size: 2.5rem;
+        align-self: flex-start;
+    
+    }
+    
+    .info {
+        text-align: start;
+        padding: 0;
+        font-size: 1.75rem;
+    }
+    
+    
+    .tituloCategoria{
+        font-family: 'Amethysta', serif;
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+
+}

@@ -5,7 +5,7 @@ body {
   font-family: 'Darker Grotesque', sans-serif;
   font-weight: 500;
   font-size: 2rem;
-  letter-spacing: 0.15rem; }
+  letter-spacing: 0.05rem; }
 
 .btn-whatsapp {
   position: fixed;
@@ -26,15 +26,91 @@ body {
     color: #0df053;
     background: white; }
 
+/*COLORES*/
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 3rem 0; }
+
+.tituloSitio {
+  font-family: 'Amethysta', serif;
+  font-size: 6rem;
+  align-self: center;
+  line-height: 4rem; }
+
+.bajada {
+  font-size: 3rem;
+  align-self: center; }
+
+.info {
+  padding: 0 10%;
+  font-size: 1.75rem;
+  text-align: center; }
+
+.tituloCategoria {
+  font-family: 'Amethysta', serif;
+  font-size: 4rem;
+  margin-top: 2rem; }
+
+.galeriaIndex {
+  display: flex;
+  justify-content: flex-start; }
+  .galeriaIndex__producto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 2rem; }
+    .galeriaIndex__producto img {
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 2rem;
+      box-shadow: 5px 5px 10px #888888;
+      background-size: cover;
+      background-position: center center; }
+
+@media only screen and (max-width: 992px) {
+  .info {
+    font-size: 1.75rem; } }
+
+@media only screen and (max-width: 576px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    margin: 2rem 0 0 0;
+    padding: 0 2rem; }
+  .tituloSitio {
+    font-family: 'Amethysta', serif;
+    font-size: 4rem;
+    align-self: flex-start;
+    line-height: 3rem; }
+  .bajada {
+    font-size: 2.5rem;
+    align-self: flex-start; }
+  .info {
+    text-align: start;
+    padding: 0;
+    font-size: 1.75rem; }
+  .tituloCategoria {
+    font-family: 'Amethysta', serif;
+    font-size: 3rem;
+    margin-top: 2rem; } }
+
 .menu {
-  background-color: black; }
+  background-color: black;
+  margin: auto; }
   .menu__logo {
     height: 70px; }
   .menu__boton {
     background-color: transparent;
     border-color: transparent !important; }
     .menu__boton__icono {
-      background-image: url(https://raw.githubusercontent.com/sebastgarcia/catalogoHT/0deb3b94da9c05948aef04c07d62985daf7f413d/imagenes/boton_navbar.svg);
+      background-image: url(../imagenes/boton_navbar.svg);
       display: inline-block;
       width: 1.5em;
       height: 1.5em;
@@ -66,37 +142,42 @@ body {
   font-weight: 300;
   font-size: 1.8rem; }
 
-.footer {
-  background-color: #000;
-  padding: 3rem 0; }
-  .footer__logo {
-    height: 70px;
-    display: flex;
-    justify-content: center; }
-    .footer__logo img {
-      height: 100%; }
-  .footer__contacto {
-    padding-top: 1rem;
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: white;
-    letter-spacing: 0.15rem; }
-    .footer__contacto a {
+footer {
+  background-color: #000; }
+  footer .menuFooter {
+    padding: 3rem 0;
+    margin: auto; }
+    footer .menuFooter__logo {
+      height: 70px;
+      display: flex;
+      justify-content: center; }
+      footer .menuFooter__logo img {
+        height: 100%; }
+    footer .menuFooter__contacto {
+      padding-top: 1rem;
+      display: flex;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: 700;
       color: white;
-      text-decoration: none;
-      padding: 1rem; }
-      .footer__contacto a:hover {
-        background-color: salmon;
-        color: white; }
+      letter-spacing: 0.15rem; }
+      footer .menuFooter__contacto a {
+        color: white;
+        text-decoration: none;
+        padding: 1rem; }
+        footer .menuFooter__contacto a:hover {
+          background-color: salmon;
+          color: white; }
 
 .presentacion {
-  margin-top: 3rem;
+  margin: 3rem 0;
   display: flex; }
   .presentacion__imagen {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    position: relative;
+    top: 60px;
+    margin-bottom: 6rem; }
     .presentacion__imagen img {
       max-width: 100%;
       max-height: 80vh;
@@ -108,7 +189,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 5rem; }
+    position: relative;
+    top: 60px; }
     .presentacion__texto__detalle {
       list-style: none;
       padding: 0; }
@@ -125,7 +207,8 @@ body {
           font-size: 1.75rem; }
     .presentacion__texto__condiciones {
       list-style: none;
-      padding: 0; }
+      padding: 0;
+      margin-bottom: 9rem; }
 
 .nombreProducto {
   position: absolute;
@@ -133,26 +216,25 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Amethysta', serif;
-  top: 95px;
   padding: 0;
   max-width: 80vw; }
   .nombreProducto .titulo {
     font-size: 2.5rem;
     padding: 2rem;
-    background-color: #d41b0ed5;
+    background-color: #f8e6c4de;
     border-radius: 2rem;
     box-shadow: 2px 2px 8px #888888; }
   .nombreProducto .precio {
     font-size: 2rem;
     padding: 1rem 2rem;
-    background-color: #d41b0ed5;
+    background-color: #f8e6c4de;
     border-radius: 2rem;
     box-shadow: 2px 2px 8px #888888; }
 
 .galeria {
   display: flex;
   justify-content: space-around;
-  margin: 6rem 0 4rem 0; }
+  margin: 4rem 0; }
   .galeria__producto {
     position: relative;
     display: flex;
@@ -180,3 +262,8 @@ body {
     background: #4c5057; }
   .color__natural {
     background: #f5e1c3; }
+
+@media only screen and (max-width: 992px) {
+  .presentacion__imagen {
+    justify-content: start;
+    margin-bottom: 2rem; } }
