@@ -43,7 +43,9 @@
     &__producto{
         position: relative;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         max-width: 100%;
         padding: 2rem ;
     
@@ -56,6 +58,12 @@
             box-shadow: 5px 5px 10px #888888;
             background-size: cover;
             background-position: center center;
+        }
+
+        p {
+            padding-top: 1rem ;
+            font-weight: 700;
+
         }
     }
 }
