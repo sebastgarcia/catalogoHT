@@ -37,6 +37,21 @@
             list-style: none;
             padding: 0;
 
+            
+
+            li {
+                line-height: 2rem;
+                padding-bottom: 1rem ;
+
+                strong{
+                    font-size: 2.3rem;
+                }
+
+                ul{
+                    padding-top: 0.5rem;
+                }
+            }
+
             &__colores{
                 list-style: none;
                 display: inline-flex;
@@ -58,6 +73,16 @@
             list-style: none;
             padding: 0;
             margin-bottom: 4rem + 5rem;
+
+            li {
+                line-height: 2rem;
+                padding-bottom: 1rem ;
+
+                strong{
+                    font-size: 2.3rem;
+                }
+
+            }
             
         }
 
@@ -97,7 +122,7 @@
 
 .galeria {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 4rem 0;
     
 
@@ -140,6 +165,42 @@
         background: $natural;
     }
 
+    &__coral{
+        background: $coral;
+    }
+
+    &__rosa{
+        background: $rosa;
+    }
+
+    &__verde{
+        background: $verde;
+    }
+
+    &__gris{
+        background: $gris;
+    }
+
+}
+
+.rayado2 {
+    width: 12.5px; 
+    height: 25px; 
+    background: $rayado2;
+    border-radius: 0 100px 100px 0;
+    display: inline-flex;
+    margin-right: 0.5rem;
+
+}
+
+.rayado1 {
+    width: 12.5px; 
+    height: 25px; 
+    background: $rayado1;
+    border-radius: 100px 0 0 100px ;
+    display: inline-flex;
+
+ 
 }
 
 @media only screen and (max-width: 992px) {

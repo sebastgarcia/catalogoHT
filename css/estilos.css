@@ -31,6 +31,8 @@ ul {
   padding: 0; }
 
 /*COLORES*/
+/*bolsos*/
+/*almohadones*/
 .intro {
   display: flex;
   flex-direction: column;
@@ -132,9 +134,7 @@ ul {
     margin: 0;
     padding-left: 3rem; }
     .menu__producto__categoria {
-      padding: 2rem 0 0 3rem;
-      display: flex;
-      align-items: center; }
+      padding: 2rem 0 0 3rem; }
       .menu__producto__categoria__item {
         padding: 0.5rem 1rem !important; }
       .menu__producto__categoria a {
@@ -213,6 +213,13 @@ footer {
     .presentacion__texto__detalle {
       list-style: none;
       padding: 0; }
+      .presentacion__texto__detalle li {
+        line-height: 2rem;
+        padding-bottom: 1rem; }
+        .presentacion__texto__detalle li strong {
+          font-size: 2.3rem; }
+        .presentacion__texto__detalle li ul {
+          padding-top: 0.5rem; }
       .presentacion__texto__detalle__colores {
         list-style: none;
         display: inline-flex;
@@ -228,6 +235,11 @@ footer {
       list-style: none;
       padding: 0;
       margin-bottom: 9rem; }
+      .presentacion__texto__condiciones li {
+        line-height: 2rem;
+        padding-bottom: 1rem; }
+        .presentacion__texto__condiciones li strong {
+          font-size: 2.3rem; }
 
 .nombreProducto {
   position: absolute;
@@ -252,7 +264,7 @@ footer {
 
 .galeria {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin: 4rem 0; }
   .galeria__producto {
     position: relative;
@@ -281,6 +293,29 @@ footer {
     background: #4c5057; }
   .color__natural {
     background: #f5e1c3; }
+  .color__coral {
+    background: #df3c36; }
+  .color__rosa {
+    background: #fab9b9; }
+  .color__verde {
+    background: #80a87c; }
+  .color__gris {
+    background: #aaaaaa; }
+
+.rayado2 {
+  width: 12.5px;
+  height: 25px;
+  background: #fffde2;
+  border-radius: 0 100px 100px 0;
+  display: inline-flex;
+  margin-right: 0.5rem; }
+
+.rayado1 {
+  width: 12.5px;
+  height: 25px;
+  background: #96a6b3;
+  border-radius: 100px 0 0 100px;
+  display: inline-flex; }
 
 @media only screen and (max-width: 992px) {
   .presentacion__imagen {
